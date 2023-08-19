@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import WeatherTemperatureComponent from './components/WeatherTemperatureComponent';
 
-function App() {
+
+const App = () => {
+  const [city, setCity] = useState('');
+  const [showWeather, setShowWeather] = useState(false);
+
+  const handleCityChange = (event) => {
+    setCity(event.target.value);
+  };
+
+  const handleSearch = () => {
+    setShowWeather(true); 
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Weather App</h1>
+      <input
+        type="text"
+        value={city}
+        onChange={handleCityChange}
+        onKeyPress={handleKeyPress} // Call handleSearch when Enter is pressed
+        placeholder="Enter a city"
+      />
+      <button onClick={handleSearch}>Search</button> {/* Button to trigger API call */}
+      {showWeather && <WeatherTemperatureComponent city={city} />}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,10 @@
+ <h2>Weather Details for {city}</h2>
+          <p>Location: {weatherData.location.name}, {weatherData.location.region}, {weatherData.location.country}</p>
+          <p>Temperature: {weatherData.current.temp_c}°C / {weatherData.current.temp_f}°F</p>
+          {/* Add more details here */}
+
+
+
+          import React, { useState, useEffect } from 'react';
+import { fetchThreeDayForecast, fetchWeatherData } from '../utils/weatherapi';
+import ThreeDayForecastComponent from './ThreeDayForecastComponent';

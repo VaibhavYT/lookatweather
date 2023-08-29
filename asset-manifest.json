@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/lookatweather/static/css/main.b51bc50f.css",
+    "main.js": "/lookatweather/static/js/main.363f4ff3.js",
+    "static/js/787.fd0626a4.chunk.js": "/lookatweather/static/js/787.fd0626a4.chunk.js",
+    "static/media/cl_4.png": "/lookatweather/static/media/cl_4.9957456da0445490c376.png",
+    "static/media/cl_2.png": "/lookatweather/static/media/cl_2.cb8726bd28c18f529c4a.png",
+    "static/media/cl_5.png": "/lookatweather/static/media/cl_5.fea62e3beeb0049f5768.png",
+    "static/media/cl_3.png": "/lookatweather/static/media/cl_3.c083fc151ebd00ab40a2.png",
+    "static/media/sun.png": "/lookatweather/static/media/sun.b972dcf61eb381f03551.png",
+    "static/media/cl_1.png": "/lookatweather/static/media/cl_1.15eb556cd941ec7fc2b4.png",
+    "index.html": "/lookatweather/index.html",
+    "main.b51bc50f.css.map": "/lookatweather/static/css/main.b51bc50f.css.map",
+    "main.363f4ff3.js.map": "/lookatweather/static/js/main.363f4ff3.js.map",
+    "787.fd0626a4.chunk.js.map": "/lookatweather/static/js/787.fd0626a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b51bc50f.css",
+    "static/js/main.363f4ff3.js"
+  ]
+}

@@ -13,7 +13,7 @@ const App = () => (
       <WeatherDataProvider>
         <BrowserRouter basename="/lookatweather">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/lookatweather" element={<HomePage />} />
             <Route path="/weatherdetail" element={<OneDayWeatherDetails />} />
           </Routes>
         </BrowserRouter>
